@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Ваши другие теги head -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-bg"></div>
+        <div class="container">
+            <div class="logo">
+                <!-- Вставьте код или путь к изображению вашего логотипа -->
+                <img src="img/logoraykat.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Услуги</a>
+                    </li>
+                    <li><a href="#technologies">Технологии</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#statistics">О нас</a></li>
+                    <li><a href="#" id="open-appointment-form">Записаться</a></li>
+                </ul>
+            </nav>
+            <div class="glavname">RAKYAT
+                <br> <p>Tattoo Studio</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <!-- Section "Услуги" -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наши услуги</h2>
+                <p>Наша компания предлагает следующие услуги:</p>
+            </div>
+            <div class="service-slider">
+                <!-- Карточки услуг -->
+                <div class="service-card">
+                    <img src="img/tatt1.jpg" alt="Услуга 1">
+                    <div class="service-info">
+                        <h3>Классическое тату</h3>
+                        <p> Мы предоставляем услугу классического татуирования, известного своими яркими цветами, контурными линиями и четкими контурами. 
+                            Этот стиль включает в себя изображения животных, цветов, символов и морских тем, отражающих богатую историю и культурное 
+                            наследие. Наши татуировщики мастерски воплощают ваши идеи, создавая уникальные и выразительные работы искусства на вашей коже.
+                        </p>
+                        <p class="price">Стоимость: $30~$5000</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="img/tatt2.jpg" alt="Услуга 2">
+                    <div class="service-info">
+                        <h3>Тату вслепую</h3>
+                        <p>Наша уникальная услуга автомата с татуировками предоставляет вам возможность получить случайное татуировочное произведение, не зная заранее, что это будет. 
+                            Это позволяет вам испытать удивление и волнение, неизвестность, которая придает вашей татуировке дополнительный элемент загадки и интриги.
+                        </p>
+                        <p class="price">Стоимость: $200</p>
+                    </div>
+                </div>
+                <!-- Добавьте другие карточки услуг -->
+                <div class="service-card">
+                    <img src="img/tatt3.png" alt="Услуга 2">
+                    <div class="service-info">
+                        <h3>Временное тату</h3>
+                        <p>Наши временные татуировки предоставляют вам возможность насладиться красивым дизайном, не прибегая к постоянным изменениям вашего внешнего вида. 
+                            Сделанные с использованием качественных материалов и профессиональных методов, наши временные татуировки обещают яркие и выразительные образы, которые легко нанести и снять.</p>
+                        <p class="price">Стоимость: $15</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="img/tatt4.jpg" alt="Услуга 2">
+                    <div class="service-info">
+                        <h3> Удаление тату</h3>
+                        <p>Наша услуга удаления татуировок поможет вам избавиться от нежелательных рисунков на коже без боли и риска осложнений. 
+                            Мы используем передовые технологии, которые эффективно разрушают чернила тату и способствуют их естественному выведению из организма.</p>
+                        <p class="price">Стоимость: $100~$5000</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="img/tatt5.jpg" alt="Услуга 2">
+                    <div class="service-info">
+                        <h3>Шрамирование</h3>
+                        <p>Шрамирование - это процесс создания рельефных узоров или изображений на коже с помощью специального оборудования. 
+                            Наши опытные мастера помогут вам украсить тело уникальными шрамами, которые могут служить как декоративным элементом, так и символом индивидуальности.</p>
+                        <p class="price">Стоимость: $300~$5000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    // Инициализация Swiper
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            // Дополнительные настройки для различных разрешений экрана
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        }
+    });
+</script>
+
+<!-- Technologies section -->
+<section id="technologies" class="technologies">
+    <div class="container">
+        <div class="section-title">
+            <h2>Наши технологии</h2>
+            <p>Мы используем самые передовые технологии, чтобы обеспечить качество наших услуг.</p>
+        </div>
+        <div class="technology-list">
+            <div class="technology-item">
+                <img src="img/teh1.jpg" alt="Technology 1">
+                <h3>Тату-машинки</h3>
+                <p>Современные качественные тату-машинки обеспечать высокое качество вашему произведению искусства.</p>
+            </div>
+            <div class="technology-item">
+                <img src="img/teh2.jpg" alt="Technology 2">
+                <h3>Стерильность и гигиена</h3>
+                <p>Наши мастерсике полностью стерильны, также мы используем всегда новые расходники для каждого клиента.</p>
+            </div>
+            <div class="technology-item">
+                <img src="img/teh3.jpeg" alt="Technology 2">
+                <h3>Анестезия</h3>
+                <p>Анестезия в нашей студии высокого качества и обеспечит благоприятное протекание процедуры нанесения тату.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h2>Портфолио</h2>
+            <p>Взгляните на наши последние работы</p>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="img/port1.jpg" alt="Work 1">
+                <div class="portfolio-info">
+                    <h3>Сад Роз</h3>
+                    <p>Мастер: PinSkin</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/port2.jpg" alt="Work 2">
+                <div class="portfolio-info">
+                    <h3>Scorpion</h3>
+                    <p>Мастер: PinSkin</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/port3.jpg" alt="Work 3">
+                <div class="portfolio-info">
+                    <h3>Искусство</h3>
+                    <p>Мастер: PinSkin</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/port4.jpg" alt="Work 4">
+                <div class="portfolio-info">
+                    <h3>Брошь Принца</h3>
+                    <p>Мастер: PinSkin</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/port5.jpg" alt="Work 5">
+                <div class="portfolio-info">
+                    <h3>Послание</h3>
+                    <p>Мастер: PinSkinа</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="img/port6.jpg" alt="Work 6">
+                <div class="portfolio-info">
+                    <h3>Цветочный Дракон</h3>
+                    <p>Мастер: PinSkin</p>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="portfolio.html" class="btn">Посмотреть всё</a>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="team">
+    <div class="container">
+        <div class="section-title">
+            <h2>Наша команда</h2>
+            <p>Встречайте наших профессионалов</p>
+        </div>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="img/mef1.jpg" alt="ahtung">
+                <h3>Застенчиков Алексей Алексеевич</h3>
+                <p class="position">Директор</p>
+                <p class="description">Неадекват хочет автомат._.</p>
+            </div>
+            <div class="team-member">
+                <img src="img/mef2.jpg" alt="Jane Smith">
+                <h3>Манченко Даниил Михайлович</h3>
+                <p class="position">Татуировщик</p>
+                <p class="description">Настоящий фурион в мире тату</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Блок со статистикой и картой -->
+<section id="statistics" class="statistics">
+    <div class="container">
+        <div class="section-title">
+            <h2>О нас</h2>
+            <p>Ключевая информация</p>
+        </div>
+        <div class="statistics-wrapper">
+            <div class="statistics-item">
+                <h3>Посещения</h3>
+                <p class="count">1000+</p>
+            </div>
+            <div class="statistics-item">
+                <h3>Заказы</h3>
+                <p class="count">500+</p>
+            </div>
+            <div class="map">
+                <!-- Google карта -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1457.1348053291365!2d95.70957499432644!3d56.206121958011394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ca90f86f2cf8b3f%3A0x640b1f04a2f5b200!2z0YPQuy4g0JrQuNGX0L3RhtCw0YLRjA!5e0!3m2!1sru!2sru!4v1648751251164!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>Тату Студия Rakyat</h3>
+                <p>Юридический адрес: 663600, Россия, Красноясрский край, Канск, ул. Урицкого, д. 71</p>
+                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            </div>
+        </div>
+    </div>
+</section>
+<button id="back-to-top-btn" title="Наверх">&#8593;</button>
+
+<!-- Форма -->
+
+<div id="appointment-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Записаться</h2>
+        <form id="appointment-form" action="#" method="post">
+            <label for="fullname">Фамилия:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" pattern="\+*\d{3}-\d{3}-\d{2}-\d{2}" required>
+            
+            <label for="service">Услуга:</label>
+            <select id="service" name="service" required>
+                <option value="">Выберите услугу</option>
+                <option value="service1">Классическое тату</option>
+                <option value="service2">Тату вслепую</option>
+                <option value="service3">Временное тату</option>
+                <option value="service4">Удаление тату</option>
+                <option value="service5">Шрамирование</option>
+            </select>
+            
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Время:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <input type="submit" value="Оформить заказ">
+        </form>
+    </div>
+</div>
+
+<script src="scripts/index.js"></script>
+
+    <!-- Footer -->
+    
+    <footer>
+        <div class="container">
+            <p>&copy; Copyright RAKYAT</p>
+        </div>
+    </footer>
+</body>
+</html>
